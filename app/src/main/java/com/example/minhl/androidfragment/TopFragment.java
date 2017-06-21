@@ -20,9 +20,6 @@ public class TopFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof MainActivity) {
-            this.mainActivity = (MainActivity) context;
-        }
     }
 
     @Nullable
@@ -36,6 +33,7 @@ public class TopFragment extends Fragment {
                 applyText();
             }
         });
+        this.mainActivity = (MainActivity)getActivity();
         return view;
     }
 

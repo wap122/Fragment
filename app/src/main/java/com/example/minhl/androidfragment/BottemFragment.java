@@ -17,25 +17,20 @@ import android.widget.Toast;
 
 public class BottemFragment extends Fragment {
     private ImageView imgView;
-    private Context context;
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        this.context = context;
-    }
+    private MainActivity mainActivity;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.acitivity_bottom,container,false);
         imgView = (ImageView) view.findViewById(R.id.img_pic);
-
+        mainActivity = (MainActivity) getActivity();
         return view;
 
     }
     public void changePicture() {
         imgView.setImageResource(R.drawable.hotgirl);
-        Toast.makeText(context, "Dep trai co gi sai", Toast.LENGTH_SHORT).show();
+        Toast.makeText(mainActivity, "Dep trai co gi sai", Toast.LENGTH_SHORT).show();
     }
 }
+

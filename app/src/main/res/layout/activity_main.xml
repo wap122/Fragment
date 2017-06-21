@@ -5,14 +5,14 @@
     android:orientation="vertical">
 
     <fragment
-        android:name="com.example.minhl.androidfragment.TopFragment"
         android:id="@+id/top_fragment"
+        android:name="com.example.minhl.androidfragment.TopFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <fragment
-        android:name="com.example.minhl.androidfragment.BottemFragment"
         android:id="@+id/bot_fragment"
+        android:name="com.example.minhl.androidfragment.BottemFragment"
         android:layout_width="match_parent"
         android:layout_height="fill_parent" />
 </LinearLayout>
